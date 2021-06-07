@@ -34,23 +34,28 @@ def main():
     return """<html>
         <style>
             body {
-                background-image: url(https://images.pexels.com/photos/2521620/pexels-photo-2521620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://images.pexels.com/photos/2521620/pexels-photo-2521620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+                background-size: cover;
             }
     
             h1 {
                 text-align: center;
                 font-size: 70px;
                 padding-top: 20px;
+                color: white;
             }
 
             h2{
-                text-align: left;
+                text-align: center;
                 font-size: 40px;
                 padding-left: 20px;
+                color: white;
             }
 
             ul{
                 display: inline;
+                align-items: center;
+                text-align: center;
                 
             }
 
@@ -59,13 +64,14 @@ def main():
                 list-style: disc;
                 padding-left: 30px;
                 line-height: 1.5;
-                font-weight: bold; 
+                font-weight: bold;
+                color: white; 
             }
         </style>
 
     <body>
         <h1>Surf's Up: Hawaii Climate</h1>
-        <h2>Available Routes</h2>
+        <em><h2>Available Routes</h2></em>
         <ul>
             <li>
                 Precipitation:  /api/v1.0/precipitation      
